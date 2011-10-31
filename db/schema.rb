@@ -15,9 +15,11 @@ ActiveRecord::Schema.define(:version => 20111031013143) do
   create_table "news", :force => true do |t|
     t.string   "titulo"
     t.string   "autor"
-    t.text     "texto"
+    t.string   "texto"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "prev",       :null => false
+    t.text     "ext"
   end
 
 end

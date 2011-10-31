@@ -3,7 +3,19 @@
 <h2><%=@noticia.titulo%></h2>
 			<p>
             <%=@noticia.texto%>
-			</p>
+           	</p>
+
+           	<br><br>
+           	
+            <%	if @noticia.ext.to_s != "" %>
+
+             <p>Link Externo: <a href="<%=@noticia.ext%>"><%=@noticia.ext%></a></p>   
+             
+           	
+           
+            
+
+           	<% end %>
 
 						
 

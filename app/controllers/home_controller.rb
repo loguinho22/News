@@ -8,5 +8,6 @@ class HomeController < ApplicationController
    @noticia = News.find(params[:id])
    end
 
+  
 
 end

@@ -6,7 +6,8 @@ class CreateNews < ActiveRecord::Migration
       t.string :titulo
       t.string :autor
       t.text :prev
-      t.text :texto
+      t.string :texto
+      t.text :ext
       
       
      t.timestamps

@@ -1,0 +1,22 @@
+
+
+<h2><%=@noticia.titulo%></h2>
+			<p>
+            <%=@noticia.texto%>
+           	</p>
+
+           	<br><br>
+           	
+            <%	if @noticia.ext.to_s != "" %>
+
+             <p>Link Externo: <a href="<%=@noticia.ext%>"><%=@noticia.ext%></a></p>   
+             <%=video("http://www.youtube.com/watch?v=9O72RLP5fF4&ob=av3e")%>
+           	
+           
+            
+
+           	<% end %>
+
+						
+
+
