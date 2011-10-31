@@ -7,6 +7,12 @@ gem 'rails', '3.0.7'
 
 gem 'mysql2'
 
+group :test, :development do
+
+gem 'dispatcher'
+gem 'mongrel' 
+
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
