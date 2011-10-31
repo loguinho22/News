@@ -2,9 +2,9 @@
 
 <h2><%=news.titulo%></h2>
 			<p>
-            <%=news.texto%>
+            <%=news.previa%>
 			</p>
 
-						<p><%=link_to "Leia Mais", :action => "show", :id => news%> Data </p>
+						<p><%=link_to "Leia Mais", :action => "show", :id => news%> </p>
 <% end %>
 

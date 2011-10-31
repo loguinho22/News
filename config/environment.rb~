@@ -1,0 +1,19 @@
+# Load the rails application
+require File.expand_path('../application', __FILE__)
+
+# Initialize the rails application
+Blog::Application.initialize!
+
+# Email
+ActionMailer::Base.delivery_method = :smtp
+
+ActionMailer::Base.server_settings = {
+   :address => "smtp.tutorialspoint.com",
+   :port => 25,
+   :domain => "tutorialspoint.com",
+   :authentication => :login,
+   :user_name => "username",
+   :password => "password",
+}
+
+# Fim Email

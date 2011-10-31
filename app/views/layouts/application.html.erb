@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
 <head>
-	<title>Blue blog template</title>
+	<title>BlueBlog</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
 
 	  <%= stylesheet_link_tag "images/style.css" %>
@@ -18,13 +18,9 @@
 		</div>
 		
 		<div id="horizontal">
-			<a href="#">Home</a>
-			<a href="#">Articles</a>
-			<a href="#">Forum</a>
-			<a href="#">Gallery</a>
-			<a href="#">Our Affiliates</a>
-			<a href="#">Support</a>
-			<a href="#">Contact</a>
+		   <%=link_to "Home", :controller => "home"%>
+			<%=link_to "Contato", :controller => "contato"%>
+			<%=link_to "Sobre", :controller => "sobre"%>
 		</div>
 
 		<div id="right-column">

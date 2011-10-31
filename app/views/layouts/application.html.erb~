@@ -18,13 +18,9 @@
 		</div>
 		
 		<div id="horizontal">
-			<a href="#">Home</a>
-			<a href="#">Articles</a>
-			<a href="#">Forum</a>
-			<a href="#">Gallery</a>
-			<a href="#">Our Affiliates</a>
-			<a href="#">Support</a>
-			<a href="#">Contact</a>
+		   <%=link_to "Home", :controller => "home"%>
+			<%=link_to "Contato", :controller => "contato"%>
+			<%=link_to "Sobre", :controller => "sobre"%>
 		</div>
 
 		<div id="right-column">
@@ -56,7 +52,7 @@
 
 		<div id="content">
 
-      <% yield %>
+       <%=yield%>
 			
 		</div>
 
