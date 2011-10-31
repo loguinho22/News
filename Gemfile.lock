@@ -79,6 +79,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-
+  dispatcher
+  mongrel
   mysql2
   rails (= 3.0.7)
