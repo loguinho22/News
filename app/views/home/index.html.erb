@@ -1,10 +1,10 @@
 <% @noticia.each do |news| %>
 
-<h2><%=news.titulo%></span></h2>
+<h2><%=news.titulo%></h2>
 			<p>
             <%=news.texto%>
 			</p>
 
-						<p><a href="#"><%=link_to "Leia Mais", :action => "show", :id => news%></a> Data </p>
+						<p><%=link_to "Leia Mais", :action => "show", :id => news%> </p>
 <% end %>
 
